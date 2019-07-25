@@ -13,4 +13,20 @@ ORDER BY duration DESC
 
 QUERY 2
 
+SELECT 
+	* 
+FROM 
+	stations
+WHERE
+	station_id = 84
 
+
+
+QUERY 3
+
+SELECT 
+	mintemperaturef
+FROM 
+	weather
+WHERE
+	zip = 94301
