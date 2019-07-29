@@ -1,11 +1,48 @@
+QUERY 1:
+
 SELECT
 	date as hottest_date,
-    MAX(maxtemperaturef) as max_temp,
+	maxtemperaturef as max_temp,
 	zip as zip_code
 FROM
-    weather
-GROUP BY 
-	date, zip
+	weather
 ORDER BY 
 	max_temp DESC
 LIMIT 1;
+
+
+
+QUERY 2:
+
+SELECT
+	start_station as station,
+	COUNT(start_station) as trips
+FROM
+	trips
+GROUP BY 
+	start_station;
+
+
+
+QUERY 3:
+
+SELECT
+	trip_id as shortest_trip_id,
+	duration 
+FROM
+	trips
+ORDER BY 
+	duration ASC
+LIMIT 1;
+
+
+
+QUERY 4:
+
+SELECT
+	end_station,
+	AVG(duration) as avg_duration
+FROM
+	trips
+GROUP BY
+	end_station;
