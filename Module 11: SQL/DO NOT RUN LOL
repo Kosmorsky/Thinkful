@@ -1,0 +1,10 @@
+SELECT
+	trips.trip_id,
+	trips.duration,
+	weather.precipitationin
+FROM
+	trips
+JOIN 
+	weather
+ON
+	weather.precipitationin >= 1;
