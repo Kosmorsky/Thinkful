@@ -1,2 +1,2 @@
-# Data Science
+# Thinkful
 Thinkful Projects &amp; Things
