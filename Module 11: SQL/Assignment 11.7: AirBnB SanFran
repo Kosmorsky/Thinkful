@@ -1,3 +1,10 @@
+Exploring SF AirBnB dataset:
+
+Host name/address: 142.93.121.174
+Username: dsbc_student
+Password: 7*.8G9QH21
+Port: 5432
+
 --most expensive listing
 
 SELECT
